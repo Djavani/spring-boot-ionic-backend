@@ -30,6 +30,7 @@ public class Cliente implements Serializable{
 	private String cpfOuCnpj;
 	private Integer tipo;
 	
+	// para apagar os enderecos de um cliente
 	@OneToMany(mappedBy = "cliente", cascade=CascadeType.ALL)	
 	private List<Endereco> enderecos = new ArrayList<>();
 	
