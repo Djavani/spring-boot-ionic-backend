@@ -4,23 +4,26 @@ import java.io.Serializable;
 
 public class ClienteNewDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
-
+	
+	//dados da tabela cliente
 	private String nome;
 	private String email;
 	private String cpfOuCnpj;
 	private Integer tipo;
 	
+	// dados para a tabela endereco
 	private String logradouro;
 	private String numero;
 	private String complemento;
 	private String bairro;
 	private String cep;
 	
+	// dados para a tabela telefone
 	private String telefone1;
 	private String telefone2;
 	private String telefone3;
 	
-	private Integer cidadeID;
+	private Integer cidadeId;
 	
 	public ClienteNewDTO() {
 		
@@ -122,12 +125,12 @@ public class ClienteNewDTO implements Serializable{
 		this.telefone3 = telefone3;
 	}
 
-	public Integer getCidadeID() {
-		return cidadeID;
+	public Integer getCidadeId() {
+		return cidadeId;
 	}
 
-	public void setCidadeID(Integer cidadeID) {
-		this.cidadeID = cidadeID;
+	public void setCidadeId(Integer cidadeId) {
+		this.cidadeId = cidadeId;
 	}
 	
 	
